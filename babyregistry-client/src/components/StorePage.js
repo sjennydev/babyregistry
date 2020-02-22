@@ -1,0 +1,31 @@
+import React, { Component } from 'react';
+import {
+    AwesomeButton,
+    AwesomeButtonProgress,
+    AwesomeButtonSocial,
+  } from 'react-awesome-button';
+import 'react-awesome-button/dist/themes/theme-eric.css';
+
+class StorePage extends Component {
+    render () {
+        return (
+            <>
+                <h1>STore</h1>
+                <div>
+                <a href="https://www.amazon.com/Vulli-Sophie-Giraffe-Polka-Dots/dp/B06XHNCJHV?tag=babyli-20">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRvjVqp73oYUvi9u5Lr9b75npIZJ37Tm6pa14bZVJrOlWpzjuOb"/>
+                </a>
+                <a href="">
+                <img src="data:image/png;base64,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" />
+                </a>
+                <a href="">
+                   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRWTJF6FD3pqgZUPbouFFYUY2239NNkAZibcw-uO3a7ezCqssas" /> 
+                </a>
+                </div>
+
+            </>
+        )
+    }
+}
+
+export default StorePage;
